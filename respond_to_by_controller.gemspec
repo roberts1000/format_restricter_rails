@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Roberts"]
   spec.email         = ["roberts@corlewsolutions.com"]
 
-  spec.summary       = ""
-  spec.description   = ""
-  spec.homepage      = "http://c"
+  spec.summary       = "Restrict the formats that your Rails controller actions are allowed to process"
+  spec.description   = "Restrict the formats that your Rails controller actions are allowed to process"
+  spec.homepage      = "https://github.com/corlewsolutions/format_restricter_rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
