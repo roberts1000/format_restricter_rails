@@ -1,16 +1,14 @@
 # format_restricter_rails
 
-This gem provides a simple way to block your Rails controller actions from trying to process unsupported formats.  Without this, you'll eventually start seeing the following errors on your production site
+This gem provides a simple way to block your Rails controller actions from trying to process unsupported formats.  Without this, you'll eventually start seeing the following errors on your production site:
 
 ````
 ActionView::MissingTemplate (Missing template tasks/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}
 ````
 
-Why are you getting these errors?  Because you expected your sweet little controller action to only ever accept html requests and someone decided to send it a .json request.  Rails happily obliged, processed the action and failed when it couldn't find a corresponding json template to render.
+Why are you getting these errors?  Because you designed your sweet little controller action to only process html requests and someone decided to send it a .json request.  Rails happily obliged, processed the action and failed when it couldn't find a corresponding json template to render.
 
-When this happens, step one is usually to start defining `respond_to` calls in your actions.  Once you realized that's going to explode your code, you'll probably try to call `respond_to :html` at the top of your controller class in hopes that will help.  Sadly, it won't; and that's where this gem comes in.
-
-The gem provides a single controller class method, called `restrict_formats_to` that you can add to your controller to declare the formats that it is allowed to process.  When unallowed formats are requested, halts execution and returns an **HTTP Error 406 Not acceptable**.
+When this happens, you may think to start defining `respond_to` calls in your actions.  Once you realize that's going to explode your code base, you'll probably try to call `respond_to :html` at the top of your controller class in hopes that will help.  Sadly, it won't; and that's where this gem comes in.  It provides a single controller class method, called `restrict_formats_to` that you can add to your controller to declare the formats that it is allowed to process.  When unallowed formats are requested, halts execution and returns an **HTTP Error 406 Not acceptable**.
 
 ## Versioning Scheme
 
