@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+Dir.chdir('spec/dummy') do
+  `rails s -b 0.0.0.0`
+end
