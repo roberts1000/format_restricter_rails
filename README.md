@@ -32,7 +32,7 @@ And then execute:
 
 ## Usage
 
-The `restrict_formats_to` is just a wrapper around a `before_action` helper and you can use the standard `only:` and `except:` options.
+Add `restrict_formats_to` to the top of a controller to restrict all actions in the controller to the specified format(s).
 
 #### Example 1: Restrict all actions
 
@@ -48,12 +48,32 @@ class MySnazzyController < ApplicationController
 end
 ````
 
-#### Example 2: Mix and match
+You can also use `only:` and `except:` options to target specific actions.
+
+
+#### Example 2: Using the `only:` option
 
 ````ruby
 class MySnazzyController < ApplicationController
   restrict_formats_to :html, only: :my_action_1
-  restrict_formats_to :json, only: :my_action_2
+  restrict_formats_to :json, only: [:my_action_2, :my_action_3]
+
+  def my_action_1
+  end
+
+  def my_action_2
+  end
+
+  def my_action_3
+  end
+end
+````
+
+#### Example 2: Using the `except:` Option
+
+````ruby
+class MySnazzyController < ApplicationController
+  restrict_formats_to :html, except: :my_action_1
 
   def my_action_1
   end
