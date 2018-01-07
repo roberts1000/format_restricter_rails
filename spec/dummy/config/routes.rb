@@ -3,6 +3,11 @@ Rails.application.routes.draw do
 
   root to: "pages#index"
 
+  namespace :all do
+    get "html_1"
+    get "html_2"
+  end
+
   namespace :only do
     get "html_1"
     get "html_multi_2"
@@ -10,8 +15,10 @@ Rails.application.routes.draw do
     get "not_restricted"
   end
 
-  namespace :all do
+  namespace :except do
     get "html_1"
     get "html_2"
+    get "json_xml"
+    get "no_allowed_formats"
   end
 end
