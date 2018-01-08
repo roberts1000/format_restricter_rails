@@ -1,0 +1,31 @@
+AllCops:
+  Exclude:
+    - spec/dummy/db/schema.rb
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/StderrPuts:
+  Exclude:
+    - spec/dummy/bin/yarn
+
+Style/MixinUsage:
+  Exclude:
+    - spec/dummy/bin/setup
+    - spec/dummy/bin/update
+
+Metrics/LineLength:
+  Max: 130
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*

@@ -1,5 +1,4 @@
 module FormatRestricterRails
-
   def self.include_modules_into_host_app
     ApplicationController.include FormatRestricterRails::Includes
   end
@@ -8,7 +7,7 @@ module FormatRestricterRails
     @was_eager_loaded ||= false
   end
 
-  def self.was_eager_loaded=value
+  def self.was_eager_loaded=(value)
     @was_eager_loaded = value
   end
 
@@ -23,9 +22,7 @@ module FormatRestricterRails
 
     config.after_initialize do
       # Don't rerun some setup code if eager loading occured.  It can result in weird things happening.
-      unless FormatRestricterRails.was_eager_loaded?
-        FormatRestricterRails.include_modules_into_host_app
-      end
+      FormatRestricterRails.include_modules_into_host_app unless FormatRestricterRails.was_eager_loaded?
 
       # Make sure the code is reloaded in development
       if Rails.env.development?

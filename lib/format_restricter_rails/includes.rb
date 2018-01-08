@@ -1,6 +1,5 @@
 module FormatRestricterRails
   module Includes
-
     def self.included(base)
       base.extend(ClassMethods)
       base.instance_eval do
@@ -11,15 +10,13 @@ module FormatRestricterRails
     module ClassMethods
       def restrict_formats_to(*args)
         options = args.extract_options!
-        allowed_formats = args.collect {|e| e.to_sym}
+        allowed_formats = args.collect(&:to_sym)
         register_before_action(options, allowed_formats)
       end
 
       def register_before_action(options, allowed_formats)
-        before_action(options) do |controller|
-          unless allowed_formats.include?(request.format.symbol)
-            render nothing: true, status: 406
-          end
+        before_action(options) do |_controller|
+          render nothing: true, status: 406 unless allowed_formats.include?(request.format.symbol)
         end
       end
     end
