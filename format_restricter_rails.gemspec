@@ -6,11 +6,11 @@ require 'format_restricter_rails/version'
 Gem::Specification.new do |spec|
   spec.name          = "format_restricter_rails"
   spec.version       = FormatRestricterRails::VERSION
-  spec.authors       = ["roberts"]
+  spec.authors       = ["roberts1000"]
   spec.email         = ["roberts@corlewsolutions.com"]
 
-  spec.summary       = "A ruby gem that stops rails controllers from processing chosen formats."
-  spec.description   = "Restrict the formats that your Rails controller actions are allowed to process"
+  spec.summary       = "A Rails Engine that prevents Rails controllers from processing undesired formats."
+  spec.description   = "A Rails Engine that restricts the formats that your Rails controller actions are allowed to process."
   spec.homepage      = "https://github.com/corlewsolutions/format_restricter_rails"
   spec.license       = "MIT"
 
