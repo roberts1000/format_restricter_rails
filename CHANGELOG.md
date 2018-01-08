@@ -1,7 +1,8 @@
 # CHANGELOG
 
-## In Development
+## 1.1.0 (Jan 08, 2018)
 
+1. Add automated tests.  (Issue #4)
 1. Configure travis CI to use cached versions of gems.  (Issue #8)
 1. Correct rubocop issues.  (Issue #11)
 
