@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## In Development
+
+1. Use the `to_prepare` hook to simplify the implementation. (Issue #14)
+
 ## 1.1.0 (Jan 08, 2018)
 
 1. Add automated tests.  (Issue #4)
@@ -8,7 +12,7 @@
 
 ## 1.0.1 (May 11, 2016)
 
-1. (Fix) Formats not being blocked when when `only:` or `except:` are not specified (Issue #1)
+1. Fix formats not being blocked when when `only:` or `except:` are not specified (Issue #1)
 
 ## 1.0.0 (May 11, 2016)
 
