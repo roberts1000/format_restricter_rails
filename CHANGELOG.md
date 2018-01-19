@@ -2,8 +2,8 @@
 
 ## In Development
 
-1. Add the rubocop_plus gem and cleanup internal code.  (Issue #13)
 1. Use the `to_prepare` hook to simplify the implementation. (Issue #14)
+1. Add the rubocop_plus gem and cleanup internal code.  (Issue #16)
 
 ## 1.1.0 (Jan 08, 2018)
 

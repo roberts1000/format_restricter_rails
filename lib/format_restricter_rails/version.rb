@@ -1,3 +1,3 @@
 module FormatRestricterRails
-  VERSION = "1.1.0".freeze
+  VERSION = "1.2.0-alpha.1".freeze
 end
