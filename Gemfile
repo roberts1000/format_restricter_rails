@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in format_restricter_rails.gemspec
 gemspec
 
+group :development do
+  gem 'rubocop_plus', "~> 1.0", require: false
+end
+
 group :development, :test do
   gem 'bootsnap', require: false
   gem 'puma', '~> 3.7'

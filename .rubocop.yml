@@ -1,31 +1,14 @@
-AllCops:
-  Exclude:
-    - spec/dummy/db/schema.rb
+# DO NOT MODIFY THIS FILE unless you want to deviate from the rubocop_plus ruleset.
 
-Style/StringLiterals:
-  Enabled: false
+# This file defines the settings used by rubocop when it runs.  You would normally add your customizations directly to this
+# file, but this file has been pre configured to read settings out of the rubocop_plus gem instead.
 
-Style/SymbolArray:
-  Enabled: false
+# Tell rubocop to load its settings from the rubocop_plus gem.
+inherit_gem:
+  rubocop_plus: config/rubocop.yml
 
-Style/Documentation:
-  Enabled: false
+Rails:
+  Enabled: true
 
-Style/EmptyMethod:
-  Enabled: false
-
-Style/StderrPuts:
-  Exclude:
-    - spec/dummy/bin/yarn
-
-Style/MixinUsage:
-  Exclude:
-    - spec/dummy/bin/setup
-    - spec/dummy/bin/update
-
-Metrics/LineLength:
-  Max: 130
-
-Metrics/BlockLength:
-  Exclude:
-    - spec/**/*
+# Place custom settings below this comment.  All customizations will OVERRIDE rubocop_plus rules.  rubocop_plus & rubocop
+# do not attempt to merge these settings with their defaults.  Long term changes should be ported to the rubocop_plus gem.
