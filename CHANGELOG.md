@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## In Development
+## 1.2.0 (Jan 18, 2018)
 
 1. Use the `to_prepare` hook to simplify the implementation. (Issue #14)
 1. Add the rubocop_plus gem and cleanup internal code.  (Issue #16)
