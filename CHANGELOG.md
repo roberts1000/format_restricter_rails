@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## In Development
+
+1. Use the rspec_starter gem for running rspec.  (Issue #20)
+
 ## 1.2.0 (Jan 18, 2018)
 
 1. Use the `to_prepare` hook to simplify the implementation. (Issue #14)

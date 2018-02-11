@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+# Execute this script to run RSpec for the app.
+# To run all specs, navigate to the application's root folder and execute
+#   bin/start_rspec
+# rspec_starter takes command line options and forwards unknown options to rspec
+#   bin/start_rspec --no-prep-db spec/features
+# See the help output for more advanced ways to run the script
+#   bin/start_rspec --help
+
+require "bundler/setup"
+require "rspec_starter"
+
+# The path to the application's root folder.
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+
+# Run commands in the context of the application's root folder.
+Dir.chdir APP_ROOT do
+  # Arguments passed to 'start' define the steps needed to cleanly run RSpec.
+  # Command line options may change execution on a per-run basis.
+  RspecStarter.start(prepare_db: true, remove_tmp: true, allow_xvfb: true)
+end
