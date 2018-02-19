@@ -3,6 +3,7 @@
 ## In Development
 
 1. Use the rspec_starter gem for running rspec.  (Issue #20)
+1. Execute `head :not_acceptable` when an unsupported format is requested. (Issue #22)
 
 ## 1.2.0 (Jan 18, 2018)
 
