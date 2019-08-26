@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Next Release
+
+1. Use `puma ~> 4.1.0`, `sqlite3 ~> 1.4.1`, `rspec-rails ~> 3.8.2` and `pry ~> 0.12.2`.  (Issue #32)
+
 ## 1.3.0 (Feb 18, 2018)
 
 1. Use the rspec_starter gem for running rspec.  (Issue #20)
