@@ -9,6 +9,6 @@ end
 
 group :development, :test do
   gem 'bootsnap', require: false
-  gem 'puma', '~> 4.1.0'
+  gem 'puma', '~> 4.1'
   gem "sqlite3", "~> 1.4.1"
 end
