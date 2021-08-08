@@ -5,7 +5,7 @@
 1. [#30](https://github.com/corlewsolutions/format_restricter_rails/issues/30): Link to issues in the CHANGELOG.md.
 1. [#32](https://github.com/corlewsolutions/format_restricter_rails/issues/32): Use `puma ~> 4.1.0`, `sqlite3 ~> 1.4.1`, `rspec-rails ~> 3.8.2` and `pry ~> 0.12.2`.
 1. [#36](https://github.com/corlewsolutions/format_restricter_rails/issues/36): Reduce RuboCop violations to 0.
-1. [#38](https://github.com/corlewsolutions/format_restricter_rails/issues/38): Use `puma` `~> 4.1'. **(Internal)**
+1. [#38](https://github.com/corlewsolutions/format_restricter_rails/issues/38): Use `puma` `~> 5.4'. **(Internal)**
 
 ## 1.3.0 (Feb 18, 2018)
 
