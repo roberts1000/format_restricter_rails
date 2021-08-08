@@ -8,6 +8,7 @@ Issues marked as **(Internal)** only affect development. Issues are tracked at h
 1. [#32](../../issues/32): Update development gems. **(Internal)**
 1. [#36](../../issues/36): Fix RuboCop issues. **(Internal)**
 1. [#38](../../issues/38): Use `puma` `~> 5.4'`. **(Internal)**
+1. [#47](../../issues/47): Add GitHub action workflow to check Pull Requests. **(Internal)**
 
 ## 1.3.0 (Feb 18, 2018)
 
