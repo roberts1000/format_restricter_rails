@@ -12,11 +12,16 @@ When this happens, you may start defining `respond_to` calls in your actions.  O
 
 ## Versioning Scheme
 
-This gem uses [semver](http:/semver.org).
+1. Releases are versioned using [semver 2.0.0](https://semver.org/spec/v2.0.0.html).
+1. Ruby versions that reach EOL are removed in a major or minor release.
+
+## Supported Ruby Versions
+
+Ruby 2.6.0+
 
 ## Supported Rails Versions
 
-Rails 4+.
+Rails 4+
 
 ## Installation
 
