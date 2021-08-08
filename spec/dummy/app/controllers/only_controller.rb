@@ -1,14 +1,14 @@
 class OnlyController < ApplicationController
-  restrict_formats_to :html, only: [:html_1]
-  restrict_formats_to :html, only: [:html_multi_2, :html_multi_3]
+  restrict_formats_to :html, only: [:html1]
+  restrict_formats_to :html, only: [:html_multi2, :html_multi3]
 
-  def html_1
+  def html1
   end
 
-  def html_multi_2
+  def html_multi2
   end
 
-  def html_multi_3
+  def html_multi3
   end
 
   def not_restricted

@@ -1,6 +1,6 @@
 class ExceptController < ApplicationController
   restrict_formats_to :html, except: :json_xml
-  restrict_formats_to :json, :xml, except: [:html_1, :html_2]
+  restrict_formats_to :json, :xml, except: [:html1, :html2]
 
   def json_xml
   end
@@ -8,9 +8,9 @@ class ExceptController < ApplicationController
   def no_allowed_formats
   end
 
-  def html_1
+  def html1
   end
 
-  def html_2
+  def html2
   end
 end

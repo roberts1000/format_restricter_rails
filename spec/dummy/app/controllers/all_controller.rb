@@ -1,9 +1,9 @@
 class AllController < ApplicationController
   restrict_formats_to :html
 
-  def html_1
+  def html1
   end
 
-  def html_2
+  def html2
   end
 end

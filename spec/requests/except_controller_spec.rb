@@ -17,21 +17,21 @@ RSpec.describe ExceptController do
     expect(response).to have_http_status(:not_acceptable)
   end
 
-  it "allows :html format on html_1 method" do
-    get except_html_1_path(format: :json)
+  it "allows :html format on html1 method" do
+    get except_html1_path(format: :json)
     expect(response).to have_http_status(:not_acceptable)
-    get except_html_1_path(format: :xml)
+    get except_html1_path(format: :xml)
     expect(response).to have_http_status(:not_acceptable)
-    get except_html_1_path(format: :html)
+    get except_html1_path(format: :html)
     expect(response).to have_http_status(:ok)
   end
 
-  it "allows :html format on html_2 method" do
-    get except_html_2_path(format: :json)
+  it "allows :html format on html2 method" do
+    get except_html2_path(format: :json)
     expect(response).to have_http_status(:not_acceptable)
-    get except_html_2_path(format: :xml)
+    get except_html2_path(format: :xml)
     expect(response).to have_http_status(:not_acceptable)
-    get except_html_2_path(format: :html)
+    get except_html2_path(format: :html)
     expect(response).to have_http_status(:ok)
   end
 end
