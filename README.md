@@ -92,9 +92,8 @@ end
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/roberts1000/format_restricter_rails.
+Bug reports and pull requests are welcome on the format_restricter_rails [issue page](https://github.com/roberts1000/format_restricter_rails/issues).
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
