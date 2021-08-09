@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-rails", "~> 5.0.1"
   spec.add_development_dependency "sass-rails", "~> 5.0"
 
-  spec.add_dependency "rails", ">= 4"
+  spec.add_dependency "rails", ">= 5.1"
 end
