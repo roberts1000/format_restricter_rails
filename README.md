@@ -1,25 +1,27 @@
 # format_restricter_rails
 
-This gem provides a simple way to block your Rails controller actions from processing unsupported formats.  Without this, you'll eventually start seeing the following errors on your production site:
+`format_restricter_rails` provides a simple way to block Ruby on Rails controller actions from processing unsupported formats. If you've seen the following type of errors on your production site, `format_restricter_rails` can help:
 
-````
+```ruby
 ActionView::MissingTemplate (Missing template tasks/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}
-````
+```
 
-Why are you getting these errors?  Because you designed your snazzy controller action to only process html requests and someone decided to send it a .json request.  Rails happily obliged, processed the action and failed when it couldn't find a corresponding json template to render.
+Why do these errors occur? If it's not a bug in the app code, it's usually because a person, or a bot, is sending requests to your app in a format you didn't anticipate. 
 
-When this happens, you may start defining `respond_to` calls in your actions.  Once you realize that's going to explode your code base, you'll probably try to call `respond_to :html` at the top of your controller class in hopes that it will help.  Sadly, it won't; and that's where this gem comes in.  It provides a single controller class method called `restrict_formats_to` that does exactly what you want.  When unallowed formats are requested, the controller will halt execution and return **HTTP Error 406 Not acceptable**.
+When this happens, you could start defining `respond_to` calls in your actions to handle the new formats. Once you realize that's going to explode your code base, you might try to call `respond_to :html`, at the top of your controller class, in hopes that it will help. Sadly, it won't. That's where format_restricter_rails comes in. It provides a single controller class method called `restrict_formats_to` that does exactly what you want. When unallowed formats are requested, the controller halts execution and returns **HTTP Error 406 Not acceptable**.
 
 ## Versioning Scheme
 
-1. Releases are versioned using [semver 2.0.0](https://semver.org/spec/v2.0.0.html).
-1. Ruby versions that reach EOL are removed in a major or minor release.
+Releases are versioned using [SemVer 2.0.0](https://semver.org/spec/v2.0.0.html) with the following caveats:
+
+1. Support for a Ruby version, that reaches EOL, is removed in a major or minor release.
+1. Support for a Ruby on Rails version, that reaches EOL, is removed in a major or minor release.
 
 ## Supported Ruby Versions
 
 Ruby 2.6.0+
 
-## Supported Rails Versions
+## Supported Ruby on Rails Versions
 
 Rails 4+
 
@@ -90,7 +92,7 @@ end
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/corlewsolutions/format_restricter_rails.
+Bug reports and pull requests are welcome on GitHub at https://github.com/roberts1000/format_restricter_rails.
 
 ## License
 

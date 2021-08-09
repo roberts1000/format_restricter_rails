@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "A Rails Engine that prevents Rails controllers from processing undesired formats."
   spec.description   = "A Rails Engine that restricts the formats that your Rails controller actions are allowed to process."
-  spec.homepage      = "https://github.com/corlewsolutions/format_restricter_rails"
+  spec.homepage      = "https://github.com/roberts1000/format_restricter_rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
