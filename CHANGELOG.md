@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Issues marked as **(Internal)** only affect development. Issues are tracked at https://github.com/roberts1000/format_restricter_rails/issues.
+Issues are tracked at https://github.com/roberts1000/format_restricter_rails/issues. Issues marked as **(Internal)** only affect development.
 
 ## Next Release
 
