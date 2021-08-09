@@ -10,6 +10,7 @@ Issues marked as **(Internal)** only affect development. Issues are tracked at h
 1. [#38](../../issues/38): Use `puma` `~> 5.4'`. **(Internal)**
 1. [#47](../../issues/47): Add GitHub action workflow to check Pull Requests. **(Internal)**
 1. [#50](../../issues/50): Set `required_ruby_version` to `>= 2.6.0`.
+1. [#54](../../issues/54): Make Rails 5.1 the min supported version.
 
 ## 1.3.0 (Feb 18, 2018)
 
