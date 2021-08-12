@@ -12,11 +12,27 @@ require "bundler/setup"
 require "rspec_starter"
 
 # The path to the application's root folder.
-APP_ROOT = Pathname.new File.expand_path('../', __dir__)
+APP_ROOT = Pathname.new File.expand_path('..', __dir__)
 
-# Run commands in the context of the application's root folder.
-Dir.chdir APP_ROOT do
-  # Arguments passed to 'start' define the steps needed to cleanly run RSpec.
-  # Command line options may change execution on a per-run basis.
-  RspecStarter.start(prepare_db: true, remove_tmp: true, allow_xvfb: true)
+# Create a custom task. For more information about custom tasks, see
+# https://github.com/roberts1000/rspec_starter. Once defined, add
+# 'task :my_custom_task' to the start block to execute.
+#
+# class MyCustomTask < RspecStarterTask
+#   # Specify a message to show users when the task executes.
+#   def starting_message
+#     "Executing My Custom Task"
+#   end
+#
+#   # Execute task code.
+#   def execute
+#   end
+# end
+
+# Tasks are run from the top down.
+RspecStarter.start do
+  task :verify_display_server
+  task :remove_tmp_folder, remove_dummy_tmp: true
+  task :rebuild_rails_app_database
+  task :start_rspec
 end

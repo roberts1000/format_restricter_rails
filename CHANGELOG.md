@@ -11,6 +11,7 @@ Issues are tracked at https://github.com/roberts1000/format_restricter_rails/iss
 1. [#47](../../issues/47): Add GitHub action workflow to check Pull Requests. **(Internal)**
 1. [#50](../../issues/50): Set `required_ruby_version` to `>= 2.6.0`.
 1. [#54](../../issues/54): Make Rails 5.1 the min supported version.
+1. [#59](../../issues/59): Use `rspec_starter` `~> 2.0`. **(Internal)**
 
 ## 1.3.0 (Feb 18, 2018)
 

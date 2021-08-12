@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 group :development do
-  gem 'rspec_starter', "~> 1.1", require: false
+  gem 'rspec_starter', "~> 2.0", require: false
   gem 'rubocop_plus', "~> 2.0", require: false
 end
 
