@@ -13,6 +13,7 @@ Issues are tracked at https://github.com/roberts1000/format_restricter_rails/iss
 1. [#54](../../issues/54): Make Rails 5.1 the min supported version.
 1. [#59](../../issues/59): Use `rspec_starter` `~> 2.0`. **(Internal)**
 1. [#65](../../issues/65): Add Ruby 3.1 support.
+1. [#68](../../issues/68): Add Ruby 3.2 support.
 
 ## 1.3.0 (Feb 18, 2018)
 
