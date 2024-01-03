@@ -15,6 +15,7 @@ Issues are tracked at https://github.com/roberts1000/format_restricter_rails/iss
 1. [#65](../../issues/65): Add Ruby 3.1 support.
 1. [#68](../../issues/68): Add Ruby 3.2 support.
 1. [#70](../../issues/70): Add Ruby 3.3 support.
+1. [#74](../../issues/74): Add pull request template. **(Internal)**
 
 ## 1.3.0 (Feb 18, 2018)
 
