@@ -2,7 +2,7 @@
 
 Issues are tracked at https://github.com/roberts1000/format_restricter_rails/issues. Issues marked as **(Internal)** only affect development.
 
-## Next Release
+## 2.0.0 (Jun 03, 2024)
 
 1. [#80](../../issues/80): Use `rspec_starter` `~> 3.0`. **(Internal)**
 1. [#82](../../issues/82): Make Rails 7.1 the minimum.
