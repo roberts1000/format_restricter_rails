@@ -23,7 +23,7 @@ Ruby 3.1+
 
 ## Supported Ruby on Rails Versions
 
-Rails 6.1+
+Rails 7.1+
 
 ## Installation
 
