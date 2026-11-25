@@ -10,7 +10,7 @@ end
 
 group :development, :test do
   gem 'bootsnap', require: false
-  gem 'bundler', '~> 2.0'
+  gem 'bundler', '>= 4.0'
   gem 'importmap-rails', '~> 2.0.1'
   gem 'pry', '~> 0.14.2'
   gem 'puma', '~> 6.4.1'
