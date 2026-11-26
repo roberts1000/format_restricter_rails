@@ -7,6 +7,9 @@
 inherit_gem:
   rubocop_plus: config/rubocop.yml
 
+AllCops:
+  TargetRubyVersion: 3.3
+
 Rails:
   Enabled: true
 
