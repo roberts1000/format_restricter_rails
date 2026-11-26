@@ -10,6 +10,8 @@ Issues are tracked at https://github.com/roberts1000/format_restricter_rails/iss
 1. [#93](../../issues/93): Update dev/test gems. **(Internal)**
 1. [#95](../../issues/95): Fix RuboCop issues. **(Internal)**
 1. [#98](../../issues/98): Add Ruby 3.4 support.
+1. [#98](../../issues/98): Add Ruby 3.4 support.
+1. [#100](../../issues/100): Add Ruby 4.0 support.
 
 ## 2.0.0 (Jun 03, 2024)
 
