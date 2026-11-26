@@ -2,7 +2,7 @@
 
 Issues are tracked at https://github.com/roberts1000/format_restricter_rails/issues. Issues marked as **(Internal)** only affect development.
 
-## Next Release
+## 2.1.0 (Nov 25, 2026)
 
 1. [#86](../../issues/86): Require `bundler` `>= 4.0`. **(Internal)**
 1. [#88](../../issues/88): Remove Ruby 3.1 support.
