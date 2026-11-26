@@ -19,7 +19,7 @@ module FormatRestricterRails
       # This method is turned into a private method above.
       def register_before_action(options, allowed_formats)
         before_action(options) do |_controller|
-          # Can't use 'return' here or we'll get a local jump error.
+          # Don't use 'return'. It will trigger a local jump error.
           if request.format.symbol.present?
             head :not_acceptable unless allowed_formats.include?(request.format.symbol)
           end
