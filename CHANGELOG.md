@@ -5,6 +5,7 @@ Issues are tracked at https://github.com/roberts1000/format_restricter_rails/iss
 ## Next Release
 
 1. [#107](../../issues/107): Remove Ruby on Rails 7.1 support.
+1. [#109](../../issues/109): Remove Ruby on Rails 7.2 support.
 
 ## 2.1.0 (Nov 25, 2026)
 
