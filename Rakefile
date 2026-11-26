@@ -15,8 +15,7 @@ RSpec::Core::RakeTask.new(:spec)
 
 task default: :spec
 
-desc "Start a console with pry."
+desc "Start a console with irb."
 task console: :environment do
-  exec "pry -r format_restricter_rails -I ./lib"
-  # exec "irb -r format_restricter_rails -I ./lib"
+  exec "irb -r format_restricter_rails -I ./lib"
 end
