@@ -12,6 +12,7 @@ Issues are tracked at https://github.com/roberts1000/format_restricter_rails/iss
 1. [#98](../../issues/98): Add Ruby 3.4 support.
 1. [#98](../../issues/98): Add Ruby 3.4 support.
 1. [#100](../../issues/100): Add Ruby 4.0 support.
+1. [#100](../../issues/103): Use actions/checkout@v7 in PR workflow. **(Internal)**
 
 ## 2.0.0 (Jun 03, 2024)
 
