@@ -8,6 +8,7 @@ Issues are tracked at https://github.com/roberts1000/format_restricter_rails/iss
 1. [#109](../../issues/109): Remove Ruby on Rails 7.2 support.
 1. [#111](../../issues/111): Modernize PR template. **(Internal)**
 1. [#113](../../issues/113): Remove Ruby on Rails 8.0 support.
+1. [#115](../../issues/115): Configure `spec/dummy` as Rails 8.1 app.  **(Internal)**
 
 ## 2.1.0 (Nov 25, 2026)
 
