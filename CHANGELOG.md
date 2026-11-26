@@ -7,6 +7,7 @@ Issues are tracked at https://github.com/roberts1000/format_restricter_rails/iss
 1. [#86](../../issues/86): Require `bundler` `>= 4.0`. **(Internal)**
 1. [#88](../../issues/88): Remove Ruby 3.1 support.
 1. [#91](../../issues/91): Remove Ruby 3.2 support.
+1. [#93](../../issues/93): Update dev/test gems. **(Internal)**
 
 ## 2.0.0 (Jun 03, 2024)
 

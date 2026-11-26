@@ -9,14 +9,14 @@ group :development do
 end
 
 group :development, :test do
-  gem 'bootsnap', require: false
+  gem 'bootsnap', '~> 1.26.2', require: false
   gem 'bundler', '>= 2.0'
-  gem 'importmap-rails', '~> 2.0.1'
-  gem 'pry', '~> 0.14.2'
-  gem 'puma', '~> 6.4.1'
+  gem 'importmap-rails', '~> 2.2.3'
+  gem 'pry', '~> 0.16.1'
+  gem 'puma', '~> 8.1.3'
   gem 'rake', '~> 13.0'
   gem 'sass-rails', '~> 6.0'
-  gem "sqlite3", '~> 1.7.0'
+  gem "sqlite3", '~> 2.10.2'
 end
 
 group :test do
